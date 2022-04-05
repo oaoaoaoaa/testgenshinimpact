@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 600px;
+            width: 1000px;
+            background-color: none;
+            margin-top: 50px;
+            border: 4px double white;
+            margin-right: auto;
+            margin-left: auto;
+            border-radius: 10px;
+            text-align: center;
+
+            
+        }
+        .box1{
+            display: none ;
+        }
+        .box2{
+            display: none;
+        }
+        .boxm{
+            height: 50px;
+            width: 700px;
+            background-color: white;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-size: 20px
+
+
+            
+        }
+        .htext{
+            color: white
+        }
+      
+    </style>
+
+<body style="background-color: #242424"> 
+    <div class="box box0 " style="top:0px">
+        <img src="klee.jpg " style="width: 500px">
+        <h1 class="htext"> Кто на картинке?</h1>
+        <div class="boxm boxm0"> Искатель приключений </div>
+        <div class="boxm boxm2"> Человек</div>
+        <div class="boxm boxm1" > Эксперт по взрывчатке</div>
+    </div>
+    <div class="box box1 " style="top:100px;">
+        
+        <audio controls style="margin-top: 50px">
+    
+            <source src="mu.mp3" >
+        </audio>
+        <h1 class="htext"> Чье пение?</h1>
+        <div class="boxm boxm2"> Синь Янь</div>
+        <div class="boxm boxm3"> Ян Ян</div>
+        <div class="boxm boxm0"> Чжун Ли</div>
+    </div>
+    <div class="box box2 " style="top:200px;">
+        <img src="gu.jpg " style="width: 300px">
+        <h1 class="htext"> Его <p style="color: #1c1c1c; font-size: 10px"> первое </p> имя</h1>
+        <div class="boxm boxm2"> Гоба </div>
+        <div class="boxm boxm4"> Мархосиас</div>
+        <div class="boxm boxm0"> Бог очага</div>
+    </div>
+
+<script>
+    document.querySelector(".boxm0").onclick = function(){
+        alert("Неа");
+        
+    }
+    document.querySelector(".boxm1").onclick = function(){
+        alert("Да");
+        
+        document.querySelector(".box1").style.display = "block";
+
+    }
+     document.querySelector(".boxm2").onclick = function(){
+        alert("Ну...Нет");
+    
+    }
+    document.querySelector(".boxm3").onclick = function(){
+        alert("Да");
+        
+        document.querySelector(".box2").style.display = "block";
+
+    }
+    document.querySelector(".boxm4").onclick = function(){
+        alert("Да");
+        
+        document.querySelector(".box3").style.display = "block";
+
+    }
+
+    
+
+
+
+</script>
+</body>
+</html>
